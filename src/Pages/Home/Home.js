@@ -7,10 +7,8 @@ import Posts from './Posts';
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
             <AnnounceForm></AnnounceForm>
             <Posts></Posts>
-            <Footer></Footer>
         </div>
     );
 };

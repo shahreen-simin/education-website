@@ -22,6 +22,7 @@ const Register = () => {
     const name = e.target.name.value;
     const password = e.target.password.value;
     createUserWithEmailAndPassword(email,password);
+    navigate('/')
   }
  
     return (

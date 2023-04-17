@@ -12,13 +12,16 @@ const Navbar = () => {
   };
     const navItems = <>
             <li>
+              <a className='text-white'>Home</a>
+            </li>
+            <li>
               <a className='text-white'>Profile</a>
             </li>
             <li>
               <a className='text-white'>Courses</a>
             </li>
             <li>
-              <a className='text-white'>About</a>
+              <a href='/JobPortal' className='text-white'>Job Portal</a>
             </li>
             <li>
               <a className='text-white'>Contact</a>
@@ -27,9 +30,9 @@ const Navbar = () => {
               <div>
               <img
                   className="w-8 rounded-full"
-                  src={user ? user.photoURL : noUser}
+                  src={user ? user?.photoURL : noUser}
                 />
-                <a className='text-white'>{user?.displayName.slice(0,7).toUpperCase()}</a>
+                <a className='text-white'>{user?.displayName?.slice(0,7).toUpperCase()}</a>
                 {
                   user ? <a className='text-white' onClick={logout}>Sign Out</a>: <a className='text-white' href='/login'>Login</a>
                 }
