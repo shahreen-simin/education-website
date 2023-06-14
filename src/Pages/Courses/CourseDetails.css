@@ -1,0 +1,108 @@
+.CourseDetails{
+    margin: 90px;
+}
+
+.CourseDetails h1{
+    font-family: "Playfair Display", serif;
+    margin-top: 30px;
+}
+.CourseDetails .img-cover{
+    height: 55vh;
+}
+.CourseDetails .instructor{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.details-image{
+    position: relative;
+}
+
+.pause{
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: rgba(247, 157, 2,0.6) ;
+    color: white;
+    position: absolute;
+    left: 39%;
+    top: 20vh;
+}
+
+.video-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: all 0.3s;
+}
+
+.video-container .close{
+    position: absolute;
+    top: 10%;
+    right: 25px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.video-container.show{
+    pointer-events: all;
+    opacity: 1;
+    background-color: rgba(19, 71, 9, 0.3);
+}
+
+.details-course-info {
+    background-color: #F8F6F4;
+    padding: 20px;
+    border-left: 3px solid green;
+    border-bottom: 3px solid green ;
+    
+}
+.buttons{
+    background-color: #ebe7e3;
+    padding: 20px 10px;
+    margin: 40px 0;
+}
+.details-course-info .price{
+    color: #094435;
+}
+.details-course-info .icon-social span{
+    font-size: 25px;
+    padding: 10px 15px 13px 14px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #FFA300 ;
+
+}
+.details-course-info .icon-social span:hover{
+    background-color: #094435;
+    color: white;
+}
+ .enroll{
+    background-color: #094435; 
+}
+ .enroll:hover{
+    background-color: #FFA300 ;
+}
+
+/* @media  screen and (min-width: 1480px) {
+    .CourseDetails{
+        margin: 100px 250px;
+    }
+} */
+@media  screen and (max-width: 768px) {
+    .CourseDetails{
+        margin: 10px;
+
+    }
+    .pause{
+        top: 10vh;
+    }
+}

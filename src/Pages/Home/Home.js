@@ -1,14 +1,20 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar';
-import Footer from '../Shared/Footer';
-import AnnounceForm from './AnnounceForm';
-import Posts from './Posts';
+import Banner from './Banner';
+import About from './About';
+import Works from './Works';
+import Benifits from './Benifits';
+import Features from './Features';
+import Courses from '../Courses/Courses';
 
 const Home = () => {
     return (
         <div>
-            <AnnounceForm></AnnounceForm>
-            <Posts></Posts>
+            <Banner></Banner>
+            <About></About>
+            <Works></Works>
+            <Benifits></Benifits>
+            <Features></Features>
+            {/* <Courses></Courses> */}
         </div>
     );
 };
